@@ -1,6 +1,3 @@
-#include "proc_packets.h"
-#include "domain_cache.h"
-#include "ip_cache.h"
 
 extern bool worker_classify(const char *type, const char *target,
                             struct requested_classification *out_req);

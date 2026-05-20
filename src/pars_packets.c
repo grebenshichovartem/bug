@@ -1,11 +1,3 @@
-#include "pars_packets.h"
-#include <rte_ether.h>
-#include <rte_ip.h>
-#include <rte_net.h>
-#include <rte_tcp.h>
-#include <rte_udp.h>
-#include <stdlib.h>
-#include <string.h>
 
 void parsing_pakage(struct rte_mbuf *packet, struct info_of_pakage *info_pac) {
 

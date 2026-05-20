@@ -1,9 +1,6 @@
 #ifndef TYPES_H
 #define TYPES_H
 
-#include "constants.h"
-#include <stdbool.h>
-#include <stdint.h>
 
 #ifdef DEBUG
 #define LOG_INFO(info, ...)                                                    \

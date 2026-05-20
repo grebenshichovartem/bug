@@ -1,13 +1,3 @@
-#include "worker.hpp"
-#include "communication.grpc.pb.h"
-#include "proc_packets.h"
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <grpcpp/grpcpp.h>
-#include <signal.h>
-#include <spdlog/spdlog.h>
-#include <thread>
 
 extern "C" bool worker_classify(const char *type, const char *target,
                                 struct requested_classification *out_req) {
