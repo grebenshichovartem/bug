@@ -3,7 +3,6 @@
 
 #include "types2.h"
 
-
 #ifdef DEBUG
 #define LOG_INFO(info, ...)                                                    \
   fprintf(stderr, "[INFO] %s: %d: " info "\n", __func__, __LINE__,             \
