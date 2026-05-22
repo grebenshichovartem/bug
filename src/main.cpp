@@ -1,7 +1,7 @@
 
 class FiltrWorker : public Worker {
   MetricsCollector metrics_collector;
-
+ 
 protected:
   void ProcessTask(const std::vector<char> &data) {
     metrics_collector.StartTask();
