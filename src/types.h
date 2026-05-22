@@ -1,7 +1,6 @@
 #ifndef TYPES_H
 #define TYPES_H
 
-#include "types2.h"
 
 #ifdef DEBUG
 #define LOG_INFO(info, ...)                                                    \
