@@ -1,3 +1,7 @@
+#include "metrics_collector.hpp"
+#include "worker.hpp"
+
+#include <spdlog/spdlog.h>
 
 class FiltrWorker : public Worker {
   MetricsCollector metrics_collector;
