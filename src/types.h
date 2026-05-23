@@ -120,5 +120,3 @@ struct snapshot_ip {
 };
 
 enum load_result { LOAD_OK = 0, LOAD_EXPIRED = 1, LOAD_ERROR = -1 };
-
-#endif
