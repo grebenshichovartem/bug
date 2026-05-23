@@ -1,3 +1,5 @@
+#include "filtr_packets.h"
+#include "pars_packets.h"
 
 bool check_domain_is_block(char domain[DOMAIN_MAX_LEN],
                            char block_domains[MAX_DOMAINS][DOMAIN_MAX_LEN]) {
@@ -127,6 +129,13 @@ bool check_categories_with_lvl(
 
 bool check_categories_and_trust_level(struct requested_classification *req_clas,
                                       struct BASE_POLICY *policy) {
+
+  if (req_clas->get_trust_level == 0 &&
+      strcmp(req_clas->get_categories[0], "unknown") == 0) {
+    LOG_INFO("This site does not have a category, is sent");
+    return true;
+  }
+
   if (check_categories(req_clas->get_categories, policy->locked_categories) ==
       false) {
     LOG_INFO("This site has a locked category");
